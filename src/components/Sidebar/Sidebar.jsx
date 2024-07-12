@@ -36,6 +36,7 @@ export default function Sidebar() {
   <React.Fragment>
    <div
     className='px-8 py-14  flex flex-col gap-5  items-center quicsand-font h-full sidebar'
+    id='sidebar'
    >
     <div >
      <img
