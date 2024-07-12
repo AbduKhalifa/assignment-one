@@ -39,7 +39,7 @@ export default function Skills() {
     <React.Fragment>
       <div
         className='p-6 sm:p-12 md:p-24 lg:p-32 flex justify-center items-center h-full relative about'
-        id='about'
+        id='skills'
       >
         <div className='grow text-center md:text-left'>
           <h6 className='text-text text-[12px] tracking-[5px] mb-4'>{String("MY  SPECIALTY")}</h6>
