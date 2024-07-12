@@ -1,6 +1,6 @@
 import React from 'react'
 import personalPhoto from "./../../assets/photo1.jpg"
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import "./sidebar.css"
 
 export default function Sidebar() {
@@ -10,25 +10,27 @@ export default function Sidebar() {
  const routesArr = [
   {
    title: "Home",
-   path: null,
+   path: "/home",
   },
   {
    title: "About",
-   path: null
+   path: "/about"
   },
   {
    title: "Skills",
-   path: null
+   path: "/skills"
   },
   {
    title: "Experince",
-   path: null
+   path: "/experince"
   },
   {
    title: "Work",
-   path: null
+   path: "/work"
   }
  ]
+
+ const { pathname } = useLocation()
 
  return (
   <React.Fragment>
@@ -50,10 +52,17 @@ export default function Sidebar() {
      </span>
     </div>
     <div>
-     <ul className='flex flex-col gap-1 justify-center items-center'>
+     <ul className='flex flex-col gap-2 justify-center items-center'>
       {routesArr.map(r => {
-       return <li key={r.path + r.title} className='text-center grow relative route cursor-pointer'>
-        <Link className='text-text text-[12px]'>
+       return <li
+        key={r.path + r.title}
+        className={
+         (pathname === r.path)
+          ? "text-center grow relative route cursor-pointer text-text active"
+          : "text-center grow relative route cursor-pointer text-text "
+        }
+       >
+        <Link className=' text-[12px] h-full w-full block' to={r.path}>
          {r.title.toUpperCase()}
         </Link>
         <span className='block w-[0px] h-[1px] bg-blue absolute bottom-0 left-0 duration-fast'></span>

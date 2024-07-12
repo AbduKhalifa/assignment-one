@@ -1,5 +1,6 @@
 import React from 'react'
 import Sidebar from '../Sidebar/Sidebar'
+import { Outlet } from 'react-router-dom'
 
 export default function Layout() {
     return (
@@ -12,7 +13,7 @@ export default function Layout() {
                         <Sidebar />
                     </aside>
                     <article className='col-span-3 md:col-span-2 lg:col-span-4'>
-                        article
+                        <Outlet />
                     </article>
                 </div>
             </main>

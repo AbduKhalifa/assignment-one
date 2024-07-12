@@ -1,3 +1,8 @@
 .sidebar .route:hover span {
  width: 100%;
 }
+
+.sidebar .route:hover,
+.sidebar .route.active {
+ color: var(--blue);
+}
