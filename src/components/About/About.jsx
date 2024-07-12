@@ -52,7 +52,7 @@ export default function About() {
           <h1 className='mb-8 playfair-font text-xl font-extrabold tracking-[6px]'>WHO AM I?</h1>
           <div className='flex flex-col gap-7 quicsand-font mb-8'>
             {content.map((t, i) => {
-              return <p key={i} className='text-[15px]'>
+              return <p key={i} className='text-[15px] text-text'>
                 <span className='text-black font-bold '>{t.boldText} </span>
                 <span className='mb-4 '>{t.text}</span>
               </p>
