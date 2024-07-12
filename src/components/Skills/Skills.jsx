@@ -51,11 +51,11 @@ export default function Skills() {
               listen. She packed her seven versalia, put her initial into the belt and made herself on the way.
             </p>
           </div>
-          <div className='grid gap-6 grid-cols1 sm:grid-cols-2'>
+          <div className='grid gap-6 grid-cols1 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2'>
             {
               skills.map((skill, i) => {
                 return <div key={i}>
-                  <h1 className='text-[16px] mb-2'>{skill.title}</h1>
+                  <h1 className='text-[16px] text-left mb-2'>{skill.title}</h1>
                   <div className='h-[6px] bg-helper rounded-full  relative'>
                     <div
                       style={{ backgroundColor: skill.color, width: skill.percent + "%" }}
