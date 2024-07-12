@@ -1,0 +1,14 @@
+.about .tags>div {
+ box-shadow: 0px 21px 100px -38px
+}
+
+@media (max-width:1024px) {
+ .about .tags>div {
+  box-shadow: 0px 21px 100px -46px
+ }
+}
+@media (max-width:764px) {
+ .about .tags>div {
+  box-shadow: 0px 0px 68px -42px
+ }
+}
