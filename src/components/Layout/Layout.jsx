@@ -8,7 +8,7 @@ export default function Layout() {
             <main>
                 <div className='grid grid-cols-3 lg:grid-cols-5'>
                     <aside
-                        className=' hidden md:block md:col-span-1 lg:col-span-1 bg-helper min-h-screen overflow-auto'
+                        className=' hidden md:block md:col-span-1 lg:col-span-1 bg-helper h-screen overflow-auto sticky top-[0px]'
                     >
                         <Sidebar />
                     </aside>
